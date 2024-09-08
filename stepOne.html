@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Resume Builder - Muhammad Tahir Hasni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Creative Resume Builder</h1>
+            <h2>by Muhammad Tahir Hasni</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="resume-form">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="section personal-info">
+                            <div class="section-header" style="background-color: #ff6f61;">
+                                <h3>Personal Information</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="section education">
+                            <div class="section-header" style="background-color: #4caf50;">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="education">Educational Background:</label>
+                                <textarea id="education" name="education" rows="4" placeholder="Outline your education history and qualifications" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="section experience">
+                            <div class="section-header" style="background-color: #2196f3;">
+                                <h3>Professional Experience</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Work Experience:</label>
+                                <textarea id="experience" name="experience" rows="4" placeholder="Detail your relevant work experience and achievements" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="section skills">
+                            <div class="section-header" style="background-color: #ffeb3b;">
+                                <h3>Skills</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="skill">Core Competencies:</label>
+                                <textarea id="skill" name="skill" rows="4" placeholder="Highlight your key skills and proficiencies" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item" style="grid-column: span 2;">
+                        <div class="button-group">
+                            <button type="submit" class="btn primary-btn">Generate Resume</button>
+                            <button type="button" class="btn secondary-btn" onclick="saveResume()">Save Resume</button>
+                            <button type="button" class="btn download-btn" onclick="downloadResume()">Download as PDF</button>
+                            <button type="reset" class="btn reset-btn">Reset Form</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        function saveResume() {
+            alert('Save functionality not implemented yet.');
+        }
+
+        function downloadResume() {
+            alert('Download functionality not implemented yet.');
+        }
+    </script>
+</body>
+</html>
